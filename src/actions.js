@@ -1,5 +1,4 @@
 import { createAction } from 'redux-actions';
-import { SubmissionError } from 'redux-form';
 import nanoid from 'nanoid';
 import { isArray, identity } from './helpers';
 
