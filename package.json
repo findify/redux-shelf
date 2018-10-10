@@ -1,6 +1,6 @@
 {
   "name": "@findify/redux-shelf",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "main": "lib/index.js",
   "scripts": {
@@ -17,7 +17,8 @@
     "url": "https://github.com/findify/redux-shelf/issues"
   },
   "files": [
-    "lib/", "src/"
+    "lib/",
+    "src/"
   ],
   "homepage": "https://github.com/findify/redux-shelf#readme",
   "dependencies": {
