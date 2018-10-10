@@ -1,8 +1,8 @@
 {
   "name": "@findify/redux-shelf",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "build": "npx babel ./src --out-dir lib --copy-files",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,6 +16,9 @@
   "bugs": {
     "url": "https://github.com/findify/redux-shelf/issues"
   },
+  "files": [
+    "lib/", "src/"
+  ],
   "homepage": "https://github.com/findify/redux-shelf#readme",
   "dependencies": {
     "lodash": "^4.17.4",
