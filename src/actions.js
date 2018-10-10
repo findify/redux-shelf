@@ -27,13 +27,13 @@ export const create = (actionName, callback, responseMapper = defaultMapper) => 
   const [start, success, error] = statuses.map(status => createApiAction(_name, status));
   const apiAction = (...params) => dispatch => {
     const result = callback(...params);
-    if (!result.then) return mayBePromise;
+    if (!result.then) return result;
     dispatch(start());
     return result
-      .then(({ data }) => {
-        dispatch(success(data, ...params));
-        dispatch(action(data, ...params));
-        return data;
+      .then((res) => {
+        dispatch(success(res, ...params));
+        dispatch(action(res, ...params));
+        return res;
       })
       .catch((error) => dispatch(error(error, ...params)))
     }
